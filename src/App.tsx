@@ -1,8 +1,20 @@
+import { Routes, Route } from "react-router-dom";
+
+import Layout from "./components/layout/Layout";
+
+import Dashboard from "./pages/Dashboard";
+import Projects from "./pages/Projects";
+import Settings from "./pages/Settings";
+
 function App() {
   return (
-    <div>
-      <h1>Orbit</h1>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Dashboard/>} />
+        <Route path="/projects" element={ <Projects/> } />
+        <Route path="/settings" element={ <Settings/> } />
+      </Routes>
+    </Layout>
   );
 }
 
