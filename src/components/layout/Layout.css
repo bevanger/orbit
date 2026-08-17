@@ -5,8 +5,10 @@
 
 .content {
     flex: 1;
+    min-width: 0;
 }
 
 main {
     padding: 2rem;
 }
+

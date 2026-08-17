@@ -2,9 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 20;
 
     padding: 1rem 2rem;
 
+    background: var(--color-surface);
     border-bottom: 1px solid #e5e7eb;
 }
 
@@ -14,4 +17,5 @@
 
 .header p {
     color: #6b7280;
+    
 }
